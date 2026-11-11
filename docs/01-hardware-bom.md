@@ -10,7 +10,7 @@
 | Patch cables | Cat6, 1 ft, 5-pack | Amazon | $10 | | All other connections |
 | WAN cable | Cat6, 15 ft | Amazon | $6 | Wall jack to server |
 
-**Approximate total: About $430**
+**Approximate total: About $410**
 
 ## Already owned
 
