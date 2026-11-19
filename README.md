@@ -12,6 +12,7 @@ The lab is fully separate from my family's network. One cable connects it to the
 - Practice defensive security: logging, monitoring, and isolated attack/defend exercises
 - Document everything, including mistakes, so the work is reproducible
 
+
 | Area | Status |
 |---|---|
 | Parts researched and ordered | Done |
