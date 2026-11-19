@@ -26,3 +26,17 @@ Each entry: the problem, the options, the decision, and why.
 ## 5. Managed switch with 802.1Q VLANs
 - **Decision:** TP-Link TL-SG108E (Easy Smart managed).
 - **Why:** Cheap, silent, and supports VLANs. I verified the listing mentioned 802.1Q VLAN support, since there is an unmanaged model with a nearly identical name. It's web-managed, so I'll still use Packet Tracer for Cisco CLI practice.
+
+## 6. Disabled Intel Optane mode in the BIOS
+- **Problem:** The BIOS shipped with the Optane storage setting on. It can hide drives from Linux installers, and the firmware warned about data loss when I turned it off.
+- **Decision:** Disabled it.
+- **Why:** The warning only applies to machines with an Optane memory module and an existing operating system. This PC has neither, so there was nothing to corrupt. I checked first that no internal drive was present.
+
+## 7. Mounting hardware for the NAS drive
+- **Problem:** The HP's 3.5-inch drive cage uses guide screws on the drive that slide into slots in the cage, and the PC shipped without any.
+- **Options:** Generic flat-head 6-32 screws (made for hot-swap caddy trays, wrong style), a generic rubber-grommet kit, or isolation guide screws that match HP's design.
+- **Decision:** Ordered 6-32 isolation guide screws that match the HP cage.
+- **Why:** HP's guide specifies four 6-32 isolation guide screws, two per side. Isolation screws also reduce vibration noise, which matters because the server sits in my room. The drive stays out of the case until they arrive.
+
+## Open decisions
+- **WAN uplink:** my room has a phone (RJ11) jack, not Ethernet, so I need another way to connect the lab to the home network (long cable, powerline adapters, or a Wi-Fi bridge). Details: [03-network-plan.md](03-network-plan.md).
