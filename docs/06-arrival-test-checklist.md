@@ -25,9 +25,11 @@ Test everything **before** installing the SSD, NIC, or NAS drive. The seller's r
 - [x] BIOS version recorded: Q01 02.31.00 (no update needed)
 
 ## If everything passes
-- [ ] Install the NVMe SSD and run a SMART check
-- [ ] Install the NIC and verify the chip with `lspci | grep -i ethernet` (should be Intel I226-V)
-- [ ] Install the NAS drive, compare the label to the listing, and enter the serial on the manufacturer's warranty page
+- [x] Install the NVMe SSD
+- [ ] Run a SMART check on the SSD and record the results
+- [x] Install the NIC and verify the chip with `lspci | grep -i ethernet` (should be Intel I226-V)
+- [ ] Mount the NAS drive (waiting on the 6-32 guide screws)
+- [ ] Compare the NAS drive's label to the listing and register the serial on the manufacturer's warranty page
 - [ ] Run SMART on the NAS drive and start a long self-test
 
 ## If anything fails
