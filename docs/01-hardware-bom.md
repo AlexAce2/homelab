@@ -9,8 +9,9 @@
 | NIC | 2.5 GbE PCIe x1 card, Intel I226-V, low-profile bracket | Amazon | $17 | Verify chip with `lspci` on arrival |
 | Patch cables | Cat6, 1 ft, 5-pack | Amazon | $10 | All other connections |
 | WAN cable | Cat6, 15 ft | Amazon | $6 | Wall jack to server |
+| Drive Bay Screws | 6-32 grommet screws for a 3.5in cage | Amazon | 9$ | Didn't come with PC |
 
-**Approximate total: About $410**
+**Approximate total: About $420**
 
 ## Already owned
 
