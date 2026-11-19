@@ -40,9 +40,27 @@ The seller's return terms require the unit to come back unmodified, so I tested 
 - A vendor default (Optane mode) can block a Linux install. Check storage-controller settings before installing.
 - Check the physical connector before planning the network.
 
+<!-- Add this entry to docs/05-build-log.md, above the "Upcoming" section. Replace "Upcoming" with the version at the bottom. Fill in the dates and bracketed results. -->
+
+## 2026-11-17 Installed the NVMe SSD and the NIC
+Parts arrived and I installed the two that don't depend on the missing drive screws. Full steps and results are in [07-hardware-install.md](07-hardware-install.md).
+
+- Installed the **Toshiba BG3 256 GB NVMe SSD** in the board's M.2 slot. The board already had the standoff and screw, so nothing extra was needed.
+- Installed the **Intel I226-V NIC** in a PCIe slot, giving the server a second Ethernet port for the firewall.
+- Booted the Ubuntu live USB and verified both parts (`lsblk`, `lspci`, `ip link`). Results: [fill in]
+
+### Problem: the NAS drive needs special screws
+- The 3.5-inch drive cage in this HP uses guide screws on the drive that slide into slots in the cage, and the PC shipped with none.
+- I ordered a matching set of 6-32 isolation guide screws. They arrive Friday, so the NAS drive stays out of the case until then.
+
+### Lessons
+- Check how a drive cage mounts drives before ordering parts. Cages vary by vendor.
+- Don't power up a spinning hard drive without it being mounted. Vibration causes noise and wear.
+- Keep installing the parts that are ready, so one missing screw doesn't stall the whole build.
+
 ## Upcoming
-- [ ] NIC, NAS drive, and NVMe SSD arrive (separate orders, still in transit)
-- [ ] Install the NIC and NAS drive, then verify with `lsblk`, `lspci`, and SMART tests
-- [ ] Install the SSD and then Proxmox
+- [ ] Guide screws arrive (Friday), mount the NAS drive, and verify it with `lsblk` and SMART
+- [ ] Run a long SMART self-test on the NAS drive and check its warranty on the manufacturer's site
+- [ ] Install Proxmox on the NVMe SSD
 - [ ] Decide and set up the WAN uplink
 - [ ] Build the pfSense VM and VLANs
