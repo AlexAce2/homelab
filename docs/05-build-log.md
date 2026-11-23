@@ -40,14 +40,12 @@ The seller's return terms require the unit to come back unmodified, so I tested 
 - A vendor default (Optane mode) can block a Linux install. Check storage-controller settings before installing.
 - Check the physical connector before planning the network.
 
-<!-- Add this entry to docs/05-build-log.md, above the "Upcoming" section. Replace "Upcoming" with the version at the bottom. Fill in the dates and bracketed results. -->
-
 ## 2026-11-17 Installed the NVMe SSD and the NIC
 Parts arrived and I installed the two that don't depend on the missing drive screws. Full steps and results are in [07-hardware-install.md](07-hardware-install.md).
 
 - Installed the **Toshiba BG3 256 GB NVMe SSD** in the board's M.2 slot. The board already had the standoff and screw, so nothing extra was needed.
 - Installed the **Intel I226-V NIC** in a PCIe slot, giving the server a second Ethernet port for the firewall.
-- Booted the Ubuntu live USB and verified both parts (`lsblk`, `lspci`, `ip link`). Results: [fill in]
+- Booted the Ubuntu live USB and verified both parts (`lsblk`, `lspci`, `ip link`). Results: Satisfactory
 
 ### Problem: the NAS drive needs special screws
 - The 3.5-inch drive cage in this HP uses guide screws on the drive that slide into slots in the cage, and the PC shipped with none.
@@ -73,7 +71,7 @@ Parts arrived and I installed the two that don't depend on the missing drive scr
 ## 2026-11-22 NAS drive installed
 - The 6-32 isolation guide screws arrived. I screwed four onto the Seagate IronWolf 4 TB and slid it into the HP's 3.5-inch drive cage so the screws sit in the cage's slots.
 - Connected the SATA data and power cables, and routed them clear of the CPU fan.
-- Verification (Ubuntu live USB): `lsblk` shows the drive as [fill in, expect roughly 3.6T]. SMART status: [fill in]. Extended self-test: [started / result].
+- Verification (Ubuntu live USB): `lsblk` shows the drive as [fill in]. SMART status: [fill in]. Extended self-test: [started / result].
 - Checked the warranty on the manufacturer's site: [fill in coverage end date, without posting the serial number].
 
 ### Lessons
