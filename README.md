@@ -20,8 +20,9 @@ The lab is fully separate from my family's network. One cable connects it to the
 | Address and VLAN plan drafted | Done |
 | Server arrival tests (memory, BIOS, ports, fans) | Done |
 | NVMe SSD and NIC installed and verified | Done |
-| NAS drive install | Waiting on mounting screws |
-| WAN uplink (no Ethernet jack in the room) | To decide |
+| NAS drive installed | Done (health checks in progress) |
+| WAN uplink (existing Cat5e run behind the wall plate) | Terminating |
+| Synology NAS (from family) | Available as a backup target |
 | Proxmox install | Next |
 | pfSense VM + VLANs | Planned |
 | NAS + VPN remote access | Planned |
