@@ -58,9 +58,31 @@ Parts arrived and I installed the two that don't depend on the missing drive scr
 - Don't power up a spinning hard drive without it being mounted. Vibration causes noise and wear.
 - Keep installing the parts that are ready, so one missing screw doesn't stall the whole build.
 
+## 2026-11-__ NAS drive installed
+- The 6-32 isolation guide screws arrived. I screwed four onto the Seagate IronWolf 4 TB and slid it into the HP's 3.5-inch drive cage so the screws sit in the cage's slots.
+- Connected the SATA data and power cables, and routed them clear of the CPU fan.
+- Verification (Ubuntu live USB): `lsblk` shows the drive as [fill in, expect roughly 3.6T]. SMART status: [fill in]. Extended self-test: [started / result].
+- Checked the warranty on the manufacturer's site: [fill in coverage end date, without posting the serial number].
+
+## 2026-11-__ Found a hidden Ethernet cable behind the wall plate
+- **Problem:** The only jack in my room is a phone (RJ11) jack, so the lab had no wired uplink.
+- **Investigation:** I removed the wall plate. The phone jack's Cat5e cable doesn't run anywhere and is cut at the end. But there is a separate Cat5e cable that was run to my room when the house was built, intended for an Ethernet jack the builder charged extra to install. It was never terminated.
+- **Plan:** Terminate the room end with a keystone jack in the spare slot of the wall plate, and terminate the router end with an RJ45 plug. Then test the cable before connecting anything.
+- **Tools and parts:** keystone jack, punch-down tool, wire strippers, RJ45 plug rated for solid-core cable, crimp tool, cable tester, patch cables.
+- **Status:** terminating tomorrow. Results will be added to [03-network-plan.md](03-network-plan.md).
+
+## 2026-11-__ Got a Synology NAS from my dad
+- It's a 2-bay Synology unit (2 x 3 TB) that he used before. It still holds a few hundred GB of family photos that serve as a backup of his current storage, so that data stays.
+- **Rules for this device:** I won't change the storage pool, RAID setup, or run system updates while experimenting. Lab experiments go in a separate shared folder.
+- **Plan:** use it to learn shared folders, permissions, and snapshots, and as a backup target for the lab. RAID is not a backup, so a second copy of the lab data goes here.
+
+### Lessons
+- Don't always lock yourself behind what you assume. The Cat5e cable I needed was already in the wall.
+- Treat anyone else's data on a device as off-limits. Keep them isolated and away from any testing/experiments.
+
 ## Upcoming
-- [ ] Guide screws arrive (Friday), mount the NAS drive, and verify it with `lsblk` and SMART
-- [ ] Run a long SMART self-test on the NAS drive and check its warranty on the manufacturer's site
+- [ ] Terminate the Cat5e cable at both ends and test it with a cable tester
+- [ ] Connect the lab's WAN to the router and confirm the link speed
+- [ ] Verify the NAS drive's SMART health and run a long self-test
 - [ ] Install Proxmox on the NVMe SSD
-- [ ] Decide and set up the WAN uplink
 - [ ] Build the pfSense VM and VLANs
