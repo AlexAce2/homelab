@@ -38,5 +38,16 @@ Each entry: the problem, the options, the decision, and why.
 - **Decision:** Ordered 6-32 isolation guide screws that match the HP cage.
 - **Why:** HP's guide specifies four 6-32 isolation guide screws, two per side. Isolation screws also reduce vibration noise, which matters because the server sits in my room. The drive stays out of the case until they arrive.
 
+## 8. WAN uplink: use the existing Cat5e run
+- **Problem:** The lab needs a wired connection to the router, and my room only had a phone jack.
+- **Options:** Long cable across the house, powerline adapters, a Wi-Fi bridge, or terminate the unused Cat5e cable already in the wall.
+- **Decision:** Terminate the existing cable.
+- **Why:** It's the cheapest and most reliable option, it needs no new cable runs, and it's gigabit-capable. Parts cost a few dollars and a cable tester confirms it works before anything depends on it.
+
+## 9. Treat the family Synology NAS as off-limits for experiments
+- **Problem:** My dad gave me an old Synology NAS that still holds family photos, which are a backup of his current storage.
+- **Decision:** Don't change its storage pool or RAID setup, and keep lab experiments in a separate shared folder.
+- **Why:** A mistake in the storage layer is the one way to lose data in this project. I can still use it to learn permissions and snapshots, and as a backup target for the lab.
+
 ## Open decisions
-- **WAN uplink:** my room has a phone (RJ11) jack, not Ethernet, so I need another way to connect the lab to the home network (long cable, powerline adapters, or a Wi-Fi bridge). Details: [03-network-plan.md](03-network-plan.md).
+- None right now. The WAN uplink plan is in place and waiting on cable testing.
