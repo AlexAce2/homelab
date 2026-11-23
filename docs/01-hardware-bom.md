@@ -10,8 +10,9 @@
 | Patch cables | Cat6, 1 ft, 5-pack | Amazon | $10 | All other connections |
 | WAN cable | Cat6, 15 ft | Amazon | $6 | Wall jack to server |
 | Drive Bay Screws | 6-32 grommet screws for a 3.5in cage | Amazon | 9$ | Didn't come with PC |
+| Ethernet Keystone Jack | Cat5e, 5-pack | Amazon | 6$ | Solution to the no ethernet jack problem |
 
-**Approximate total: About $420**
+**Approximate total: About $425**
 
 ## Already owned
 
