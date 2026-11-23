@@ -20,6 +20,7 @@
 - USB flash drive (installer media)
 - Monitor and keyboard (borrowed for the first install)
 - Power strip with open outlets
+- Crimping & Cable Stripping Tools
 
 ## Future Items/Upgrades
 
